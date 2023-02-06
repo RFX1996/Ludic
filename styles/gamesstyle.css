@@ -11497,8 +11497,21 @@ h5 {
   background-image: url('images/14.jpg');
 }
 
+.photo-15 {
+  background-image: url('images/15.png');
+}
 
+.photo-16 {
+  background-image: url('images/16.jpeg');
+}
 
+.photo-17 {
+  background-image: url('images/17.png');
+}
+
+.photo-18 {
+  background-image: url('images/18.png');
+}
 
 
 .hovereffect a:link,
@@ -11597,7 +11610,11 @@ h5 {
 .hovereffect .photo-11,
 .hovereffect.photo-12,
 .hovereffect.photo-13,
-.hovereffect.photo-14{
+.hovereffect.photo-14,
+.hovereffect.photo-15,
+.hovereffect.photo-16,
+.hovereffect.photo-17,
+.hovereffect.photo-18{
   display: block;
   position: relative;
   max-width: none;
@@ -11623,7 +11640,11 @@ h5 {
 .hovereffect:hover .photo-11,
 .hovereffect:hover.photo-12,
 .hovereffect:hover.photo-13,
-.hovereffect:hover.photo-14{
+.hovereffect:hover.photo-14,
+.hovereffect:hover.photo-15,
+.hovereffect:hover.photo-16,
+.hovereffect:hover.photo-17,
+.hovereffect:hover.photo-18{
   opacity: 0.4;
   filter: alpha(opacity=40);
   -webkit-transform: translate3d(0, 0, 0);
@@ -11645,7 +11666,11 @@ h5 {
 .photo-11,
 .photo-12,
 .photo-13,
-.photo-14{
+.photo-14,
+.photo-15,
+.photo-16,
+.photo-17,
+.photo-18{
   background-size: cover;
   height: 25vh;
   max-width: 100%;
