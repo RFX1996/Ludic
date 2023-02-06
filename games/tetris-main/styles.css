@@ -1,0 +1,155 @@
+* {
+  font-family: "Press Start 2P", cursive;
+}
+body {
+  /* display: flex; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 350px 320px 200px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-board {
+  border: solid 2px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.play-button {
+  background-color: #4caf50;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+#pause-btn {
+  display: none;
+}
+
+#sound-speaker {
+  font-size: 30px;
+}
+
+.sound-item {
+  cursor: pointer;
+}
+
+/* TOGGLE */
+.toggle {
+  cursor: pointer;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+  height: 60px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.toggle i {
+  width: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.toggle .ball {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  margin: 7.5px;
+  border-radius: 50%;
+  transition: 0.3s ease-out;
+}
+
+input {
+  display: none;
+}
+
+/*
+  -- Light Mode --
+*/
+/* h1 {
+  color: rgb(251 244 228);
+} */
+/* h2 {
+  color: rgb(251 244 228);
+}
+
+p {
+  color: rgb(251 244 228);
+} */
+/* h1,
+h2,
+p {
+  color: rgb(251 244 228);
+} */
+
+.light {
+  background: rgb(149 171 229);
+}
+
+.light .toggle {
+  background: linear-gradient(145deg, #e1e1e1, #fff);
+  box-shadow: 3px 3px 4px #e6e6e6, -3px -3px 4px #ffffff;
+}
+
+.light .toggle .bxs-sun {
+  color: #fafafa;
+}
+
+.light .toggle .bx-moon {
+  color: #151d2a;
+}
+
+.light .toggle .ball {
+  background: #151d2a;
+}
+
+/*
+  -- Dark Mode --
+*/
+
+h1,
+h2,
+p {
+  color: #04f404;
+}
+
+.dark {
+  background: gray;
+}
+
+.dark .toggle {
+  background: #151d2a;
+  box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
+}
+
+.dark .toggle .bx-sun {
+  color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+  color: #151d2a;
+}
+
+.dark .toggle .ball {
+  background: #fafafa;
+  transform: translateX(60px);
+}

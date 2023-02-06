@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body class="light">
+    <input type="checkbox" id="toggle" />
+    <label class="toggle" for="toggle">
+      <i class="bx bxs-sun"></i>
+      <i class="bx bx-moon"></i>
+      <span class="ball"></span
+    ></label>
+    <div class="grid">
+      <div class="left-column">
+        <h2>HIGH SCORES</h2>
+        <ol id="highScores"></ol>
+      </div>
+      <canvas id="board" class="game-board"></canvas>
+      <div class="right-column">
+        <div>
+          <h1>TETRIS</h1>
+          <p>Score: <span id="score">0</span></p>
+          <p>Lines: <span id="lines">0</span></p>
+          <p>Level: <span id="level">0</span></p>
+          <canvas id="next" class="next"></canvas>
+        </div>
+        <div id="sound-div">
+          <span class="sound-item" id="sound-speaker"></span>
+          <span class="sound-item" id="sound-description"></span>
+        </div>
+        <button id="play-btn" onclick="play()" class="play-button">Play</button>
+        <button id="pause-btn" onclick="pause()" class="play-button">
+          Pause
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="sound.js"></script>
+  </body>
+</html>

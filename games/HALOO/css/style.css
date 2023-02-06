@@ -1,0 +1,26 @@
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/009/251/183/original/night-simple-halloween-background-scary-cemetery-skull-for-game-vector.jpg");
+    background-size: cover;
+}
+
+body {
+    background-color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html {
+    overflow-y: hidden;
+}
