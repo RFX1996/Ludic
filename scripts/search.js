@@ -1,7 +1,4 @@
-//This is the script for searching feature
-//It allows user to search the games as we have only 5 games we will be using a trick
-//Basically, we will just hide other games using css property display and only show the one the user searched for
-//For this we will just create a list of keywords and check if the user entered value in the list
+
 
 
 var TennisKeywords = ["t", "te", "ten", "tenn", "tenni", "tennis", "tennis game"];
@@ -39,20 +36,23 @@ var itsMaze = false;
 
 
 function Reset() {
-	document.getElementById("ludogame").style.display = 'block';
-	document.getElementById("snakegame").style.display = 'block';
-	document.getElementById("tennisgame").style.display = 'block';
-	document.getElementById("tetrisgame").style.display = 'block';
-	document.getElementById("quizgame").style.display = 'block';
-	document.getElementById("fishgame").style.display = 'block';
-	document.getElementById("reagangame").style.display = 'block';
-	document.getElementById("mazegame").style.display = 'block';
+	document.getElementById("ludogame")?.style.display = 'block';
+	document.getElementById("snakegame")?.style.display = 'block';
+	document.getElementById("tennisgame")?.style.display = 'block';
+	document.getElementById("tetrisgame")?.style.display = 'block';
+	document.getElementById("quizgame")?.style.display = 'block';
+	document.getElementById("fishgame")?.style.display = 'block';
+	document.getElementById("reagangame")?.style.display = 'block';
+	document.getElementById("mazegame")?.style.display = 'block';
+
+
 
 };
 
+
 function Search() {
 
-	var SearchValue = document.getElementById("searchbar").value;
+	let SearchValue = document.getElementById("searchbar").value;
 	SearchValue = SearchValue.toLowerCase();
 	Reset();
 
@@ -270,5 +270,7 @@ function Search() {
 	if (SearchValue == '') {
 		Reset();
 	}
+
+
 }
 
