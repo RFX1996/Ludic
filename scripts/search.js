@@ -271,6 +271,5 @@ function Search() {
 		Reset();
 	}
 
-
 }
 
