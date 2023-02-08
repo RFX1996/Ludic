@@ -20,9 +20,9 @@
   <link href="styles/gamesstyle.css" rel="stylesheet" type="text/css">
   <link href="styles/custom-responsive-styles.css" rel="stylesheet" type="text/css">
   <!--scripts-->
-  <script defer type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
-  <script defer type="text/javascript" src="scripts/plugins-activate.js"></script>
-  <script defer type="text/javascript" src="scripts/search.js" defer></script>
+  <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/plugins-activate.js"></script>
+  <script type="text/javascript" src="./scripts/search.js"></script>
 
 </head>
 
@@ -109,13 +109,13 @@
 
       <!--Upper section of the games section for search bar,etc-->
 
-      <div class="container-fluid">
+      <div class=" container-fluid">
         <div class="search-container">
           <form action="">
             <div class="d-flex justify-content-center px-5">
               <div class="search">
                 <form id="searchForm"> <input type="search" id="searchbar" class="search-input"
-                    placeholder="Search game..." onkeydown="Search()" onsearch="Search()" onclick="Search()">
+                    placeholder="Search game..." onkeyup="Search()" onsearch="Search()" onclick="Search()">
                   <a class="search-icon" id="searchicon"> <i class="fa fa-search" id="sicon"></i> </a>
                 </form>
               </div>
@@ -274,7 +274,7 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col col-lg-3 thumbnail" id="tetrisgame">
+            <div class="col col-lg-3 thumbnail" id="tetris">
               <div class="card card-body">
                 <div class="hovereffect">
                   <div class="col-md-12 photo-14"></div>
