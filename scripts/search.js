@@ -1,3 +1,4 @@
+
 var FishKeywords = ["f", "fi", "fis", "fish"];
 var ReaganKeywords = ["r", "re", "rea", "reag", "reaga", "reagan"];
 var MazeKeywords = ["m", "ma", "maz", "maze"];
@@ -32,12 +33,13 @@ var itsPing = false;
 
 
 function Reset() {
+	document.getElementById("pingpong").style.display = 'block';
 	document.getElementById("fishgame").style.display = 'block';
 	document.getElementById("reagangame").style.display = 'block';
 	document.getElementById("mazegame").style.display = 'block';
 	document.getElementById("project").style.display = 'block';
 	document.getElementById("tetris").style.display = 'block';
-	document.getElementById("pingpong").style.display = 'block';
+
 
 };
 
@@ -90,7 +92,7 @@ function Search() {
 							document.getElementById("mazegame").style.display = 'none';
 							document.getElementById("tetris").style.display = 'none';
 							document.getElementById("project").style.display = 'none';
-							document.getElementById("pinpong").style.display = 'none';
+							document.getElementById("pingpong").style.display = 'none';
 						}
 					}
 				}
@@ -215,6 +217,7 @@ function Search() {
 		document.getElementById("project").style.display = 'none';
 		document.getElementById("tetris").style.display = 'none';
 	}
+
 
 	if (SearchValue == '') {
 		Reset();
