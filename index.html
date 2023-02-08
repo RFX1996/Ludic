@@ -23,6 +23,8 @@
   <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="scripts/all-plugins.js"></script>
   <script type="text/javascript" src="scripts/plugins-activate.js"></script>
+  <script type="text/javascript" src="scripts/clearForm.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -238,7 +240,11 @@
         <!--FORM FOR CONTACTING-->
         <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="form-wrap">
-            <form action="javascript:void(0)" method="post">
+            <!-- <form action="javascript:void(0)" method="post"> -->
+              <form action="https://formspree.io/f/xyyakazd"
+                  method="POST">
+                 
+
               <div class="fname floating-label">
                 <input type="text" class="floating-input" name="full name" />
                 <label for="title">First Name</label>
@@ -260,7 +266,7 @@
                 <label for="email">Message</label>
               </div>
               <div class="submit-btn">
-                <button type="submit">Submit</button>
+                <button type="submit" >Submit</button>
               </div>
             </form>
           </div>
